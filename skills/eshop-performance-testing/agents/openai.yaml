@@ -1,0 +1,4 @@
+interface:
+  display_name: "EShop Performance Testing"
+  short_description: "Run and review EShop JMeter performance tests"
+  default_prompt: "Use $eshop-performance-testing to run and analyse an EShop API performance scenario."

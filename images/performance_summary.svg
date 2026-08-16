@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620">
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <text x="55" y="55" font-family="Arial" font-size="30" font-weight="bold" fill="#172033">HW05 measured performance summary</text>
+  <text x="55" y="84" font-family="Arial" font-size="16" fill="#526070">Source: raw JTL logs and one-second backend ps samples, 2026-08-16</text>
+  <text x="55" y="130" font-family="Arial" font-size="22" font-weight="bold" fill="#172033">Throughput (RPS)</text>
+  <line x1="220" y1="155" x2="1110" y2="155" stroke="#d8dee9"/>
+  <line x1="220" y1="240" x2="1110" y2="240" stroke="#d8dee9"/>
+  <line x1="220" y1="325" x2="1110" y2="325" stroke="#d8dee9"/>
+  <text x="178" y="160" font-family="Arial" font-size="14" fill="#526070">100</text>
+  <text x="185" y="245" font-family="Arial" font-size="14" fill="#526070">50</text>
+  <text x="193" y="330" font-family="Arial" font-size="14" fill="#526070">0</text>
+  <rect x="290" y="295" width="95" height="30" fill="#4f46e5"/><text x="290" y="352" font-family="Arial" font-size="15" fill="#172033">Load</text><text x="300" y="287" font-family="Arial" font-size="14" fill="#172033">17.8</text>
+  <rect x="475" y="245" width="95" height="80" fill="#4f46e5"/><text x="468" y="352" font-family="Arial" font-size="15" fill="#172033">Stress</text><text x="486" y="237" font-family="Arial" font-size="14" fill="#172033">47.3</text>
+  <rect x="660" y="233" width="95" height="92" fill="#4f46e5"/><text x="664" y="352" font-family="Arial" font-size="15" fill="#172033">Spike</text><text x="671" y="225" font-family="Arial" font-size="14" fill="#172033">54.3</text>
+  <rect x="845" y="167" width="95" height="158" fill="#4f46e5"/><text x="827" y="352" font-family="Arial" font-size="15" fill="#172033">Endurance</text><text x="853" y="159" font-family="Arial" font-size="14" fill="#172033">92.7</text>
+  <text x="55" y="410" font-family="Arial" font-size="22" font-weight="bold" fill="#172033">p95 latency and peak backend CPU</text>
+  <text x="110" y="455" font-family="Arial" font-size="16" fill="#172033">Load: 30 ms / 17.3%</text>
+  <text x="380" y="455" font-family="Arial" font-size="16" fill="#172033">Stress: 139 ms / 24.6%</text>
+  <text x="710" y="455" font-family="Arial" font-size="16" fill="#172033">Spike stage: 103 ms / 18.0%</text>
+  <text x="110" y="500" font-family="Arial" font-size="16" fill="#172033">Endurance: 83 ms / 26.9%</text>
+  <rect x="55" y="535" width="1090" height="48" rx="8" fill="#ecfdf5"/>
+  <text x="78" y="566" font-family="Arial" font-size="18" font-weight="bold" fill="#065f46">Endurance result: 92.70 RPS for 10 minutes at 100 users, p95 83 ms, 0.00% errors.</text>
+</svg>
