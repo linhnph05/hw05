@@ -22,3 +22,5 @@ Actual response:
 The issue was created on 2026-08-16. It is a functional defect in the coupon
 calculation. The performance JTL shows HTTP status only, so this response body
 was reproduced separately before filing the issue.
+
+![Published GitHub Issue #1](../images/github_issue_1.jpg)

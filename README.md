@@ -36,5 +36,6 @@ Repository: <https://github.com/linhnph05/hw05>
 |  | **Total** | **100** | **084** |
 
 The reduced self-assessment reflects that the requested demo video was not
-recorded and no live GUI screenshot was captured. The real non-GUI results,
-raw logs, resource monitoring, reports, and GitHub issue are included.
+recorded. Chrome screenshots of the rendered JMeter dashboards are in
+`images/`; raw logs, resource monitoring, reports, and the GitHub issue are
+included.

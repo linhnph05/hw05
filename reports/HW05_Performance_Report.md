@@ -20,6 +20,20 @@ I used JMeter non-GUI mode for the measured runs. This avoids using the GUI
 listener as a load generator. The raw JTL files, JMeter HTML reports, JMeter
 logs, and resource CSV files are in `results/`.
 
+## JMeter HTML report screenshots
+
+I opened the generated JMeter HTML dashboards in Chrome and captured the
+visible dashboard summaries. These screenshots are copies of the rendered
+reports, not recreated result tables.
+
+![Load JMeter dashboard](../images/load_jmeter_html_report.jpg)
+
+![Stress JMeter dashboard](../images/stress_jmeter_html_report.jpg)
+
+![Spike JMeter dashboard](../images/spike_jmeter_html_report.jpg)
+
+![Endurance JMeter dashboard](../images/endurance_jmeter_html_report.jpg)
+
 ## Endpoint scope
 
 I avoided my teammate's selected endpoints: product search/detail, login, and
@@ -94,6 +108,8 @@ discount is 50,000 and final amount is 450,000. The actual response was
 `discount_amount: -4500000` and `final_amount: 5000000`. This is a functional
 calculation bug. The JTL only proves that the endpoint returned HTTP 200; the
 separate API response reproduction proves the defect.
+
+![GitHub Issue #1](../images/github_issue_1.jpg)
 
 ## AI analysis and misinterpretation hunt
 
