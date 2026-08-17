@@ -1,3 +1,9 @@
+commit ac3f1743d6371eba6491a355cc93da4c5a9cc828
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 20:22:40 2026 +0700
+
+    Package CLI evidence updates
+
 commit 15d1088b396c1686a4b3de4f0a54882d57c17925
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 20:21:48 2026 +0700
