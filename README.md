@@ -28,6 +28,7 @@ analysis, endurance testing, and a continuous-testing proposal.
 3. `reports/AI_Audit_Report.md` — AI prompts, outputs, and human corrections
 4. `reports/AI_Critique.md` — required 200–300 word critique
 5. `reports/Video_Narration_and_Steps.md` — Vietnamese narration and recording guide
+6. `reports/Evidence_Screenshot_Guide.md` — htop and screenfetch screenshot steps
 
 Supporting evidence is stored in:
 

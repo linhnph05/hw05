@@ -1,15 +1,15 @@
 # Video Narration and Recording Steps
 
 No video was recorded. This guide is for a later six-minute Vietnamese demo.
-Keep JMeter or its HTML dashboard on one side of the screen and the live
-backend resource terminal on the other side.
+Keep the JMeter CLI terminal or its HTML dashboard on one side of the screen
+and `htop` on the other side.
 
 ## 1. Before recording
 
 1. Start the EShop backend.
 2. Open the three JMeter plans.
 3. Open the `results/` folder and the four HTML dashboards.
-4. Open a terminal that shows the backend CPU and memory values.
+4. Open a terminal and run `htop -p "$(pgrep -f 'node server.js' | tail -n 1)"`.
 5. Arrange the windows so the test tool and backend resources are visible in
    the same frame.
 
@@ -21,7 +21,8 @@ Show the report title and computer information.
 
 > Em là Nguyễn Phan Hùng Linh, sinh viên 23127081. Đây là bài HW05 về kiểm
 > thử hiệu năng cho hệ thống EShop. Em dùng Apache JMeter 5.6.3 trên MacBook
-> Pro M1, 16 GB RAM. Backend dùng Node.js, Express và SQLite.
+> Pro M1, 16 GB RAM. Em dùng screenfetch để ghi lại thông tin máy. Backend dùng
+> Node.js, Express và SQLite.
 
 ### 0:40–1:25 — Scope and test design
 

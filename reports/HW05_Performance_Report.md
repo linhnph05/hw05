@@ -34,14 +34,22 @@ The report follows the same order as my work:
 | Base URL | `http://127.0.0.1:3000` |
 | Load-testing tool | Apache JMeter 5.6.3 |
 | Test mode | JMeter non-GUI mode |
-| Resource monitoring | macOS `ps`, once per second for the backend process |
+| Live resource evidence | `htop`, filtered to the backend PID |
+| Numeric resource data | macOS `ps`, sampled once per second |
+| Hardware evidence | `screenfetch` |
 | Computer | MacBook Pro (MacBookPro17,1), Apple M1, 8 CPU cores, 16 GB RAM |
 | Operating system | macOS 15.7.3 |
 | AI assistant | Codex / GPT-5.6 |
 
-I used non-GUI mode because the JMeter GUI can use extra CPU and memory. The
-measured resource data belongs to `/opt/homebrew/bin/node server.js`, which was
-the backend process.
+I used JMeter CLI mode because the official JMeter Getting Started guide says
+that load testing must run without the GUI for optimal results. The guide is at
+<https://jmeter.apache.org/usermanual/get-started.html#non_gui>. This also
+prevents the JMeter GUI from using resources that could affect the test.
+
+For screenshots, I used `htop` to show the live backend process and
+`screenfetch` to show the computer information. The numeric CPU and RSS tables
+still come from the one-second `ps` samples. All backend resource evidence
+tracks `/opt/homebrew/bin/node server.js`.
 
 ## 3. Step 1 — Choose the test scope
 
@@ -69,7 +77,7 @@ scenario. This meets the endpoint-group rule, but I chose a broader workflow
 with three endpoints in each scenario.
 
 The AI also suggested up to 50 users for the Stress test. I started with 30
-users because the test writes to a local SQLite database on a student laptop.
+users because the test writes to a local SQLite database on my laptop.
 I used smoke tests before the measured runs.
 
 My final changes to the AI design were:
@@ -106,6 +114,20 @@ root. The important options are:
 - `-l`: save the raw JTL file;
 - `-j`: save the JMeter log; and
 - `-e -o`: generate the HTML report.
+
+### Evidence preparation
+
+I ran `screenfetch` once for the hardware screenshot. During each performance
+test, I opened another terminal and ran the following command so `htop` showed
+only the backend process:
+
+```sh
+htop -p "$(pgrep -f 'node server.js' | tail -n 1)"
+```
+
+I kept the JMeter CLI terminal and the `htop` terminal visible in the same
+screen before taking each test screenshot. The complete capture steps and
+recommended filenames are in `Evidence_Screenshot_Guide.md`.
 
 ### 6.1 Load command
 
