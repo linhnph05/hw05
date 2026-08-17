@@ -46,11 +46,6 @@ that load testing must run without the GUI for optimal results. The guide is at
 <https://jmeter.apache.org/usermanual/get-started.html#non_gui>. This also
 prevents the JMeter GUI from using resources that could affect the test.
 
-For screenshots, I used `htop` to show the live backend process and
-`screenfetch` to show the computer information. The numeric CPU and RSS tables
-still come from the one-second `ps` samples. All backend resource evidence
-tracks `/opt/homebrew/bin/node server.js`.
-
 ## 3. Step 1 — Choose the test scope
 
 HW05 requires three endpoint groups: read-heavy, auth-heavy, and
@@ -66,8 +61,7 @@ three endpoints inside each group.
 The Load workflow contains only read requests. The Stress workflow performs a
 complete password life cycle. It does not use login, so the three-failed-login
 lockout is not triggered. The Spike workflow applies a coupon, creates a
-temporary coupon, and deletes that coupon. This limits permanent database
-changes.
+temporary coupon, and deletes that coupon.
 
 ## 4. Step 2 — Review the AI test design
 
@@ -84,12 +78,11 @@ My final changes to the AI design were:
 
 - add a separate CSV file for every scenario;
 - add HTTP status assertions;
+- extract the newest order ID in the Load workflow;
 - extract the password-reset token in the Stress workflow;
 - extract and delete the temporary coupon in the Spike workflow;
 - use three different JMeter listener types; and
 - reduce the first Stress run from 50 users to 30 users.
-
-The full AI prompts, answers, and my review are in `AI_Audit_Report.md`.
 
 ## 5. Step 3 — Prepare the final test plans
 
@@ -103,6 +96,11 @@ Each plan reads its own CSV file. The three listener types are different, as
 required. For the real measurements, the raw JTL and generated HTML dashboard
 are the main evidence.
 
+The Load and endurance tests require the test account to have at least one
+completed order. After a database reset, I complete one checkout before the
+test. The plan then reads `/api/orders/my-orders`, extracts the newest order
+ID, and uses that value for `GET /api/orders/{id}`.
+
 ## 6. Step 4 — Run the tests
 
 Before every run, I started the EShop backend, found the backend PID, and
@@ -114,20 +112,6 @@ root. The important options are:
 - `-l`: save the raw JTL file;
 - `-j`: save the JMeter log; and
 - `-e -o`: generate the HTML report.
-
-### Evidence preparation
-
-I ran `screenfetch` once for the hardware screenshot. During each performance
-test, I opened another terminal and ran the following command so `htop` showed
-only the backend process:
-
-```sh
-htop -p "$(pgrep -f 'node server.js' | tail -n 1)"
-```
-
-I kept the JMeter CLI terminal and the `htop` terminal visible in the same
-screen before taking each test screenshot. The complete capture steps and
-recommended filenames are in `Evidence_Screenshot_Guide.md`.
 
 ### 6.1 Load command
 
@@ -285,6 +269,3 @@ The AI helped create a first plan and analyse the results, but it did not own
 the final answer. I changed the plan for the local environment and checked the
 important metrics from the raw files. The separate 200–300 word critique is in
 `AI_Critique.md`. The AI interaction record is in `AI_Audit_Report.md`.
-
-No video was recorded, as instructed. `Video_Narration_and_Steps.md` contains
-the Vietnamese narration and recording steps.
