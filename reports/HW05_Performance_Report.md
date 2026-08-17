@@ -34,7 +34,7 @@ jmeter -n -t test-plans/23127081_Spike_20260816.jmx -l results/spike_recovery.jt
 jmeter -n -t test-plans/23127081_Load_20260816.jmx -l results/endurance.jtl -e -o results/endurance_html -j results/endurance_jmeter.log -Jload_threads=100 -Jload_ramp=60 -Jload_duration=600
 ```
 
-I started `trash/monitor_backend.sh` at the same time as each run. It sampled
+I started the backend-monitor script at the same time as each run. It sampled
 the backend process with `ps` once per second and wrote the matching resource
 CSV file in `results/`.
 
@@ -91,7 +91,7 @@ answer. The complete prompts and responses are in the audit report.
 
 The spike test used three time-ordered stages. I merged their raw stage JTL
 files into `results/spike.jtl`; `results/spike_execution.md` records each
-stage. The temporary stage files are in `trash/` and are not submission files.
+stage. Temporary stage files were not included in the submission.
 
 ### Resource use
 
