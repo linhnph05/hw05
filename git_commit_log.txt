@@ -1,3 +1,15 @@
+commit 1eda2461d3a8c0b40bb58c264758a0160455bb60
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:30:21 2026 +0700
+
+    Clarify chosen endpoint scope
+
+commit 0aedfce4af56e0813ebee6a83784d29d76f59ab0
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:25:07 2026 +0700
+
+    Refresh submission commit log
+
 commit 0ffd9d21d09ba2cd94bf66d952e2a5d5abe2959b
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 16:24:52 2026 +0700
