@@ -1,3 +1,15 @@
+commit db167a564fcf557a24eebd06b5d2d99cbc1939d8
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 15:51:35 2026 +0700
+
+    Keep HW05 report focused on performance results
+
+commit 2465f1bc1ed66a9135ae4e2cd8a056e67f75142f
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 15:16:18 2026 +0700
+
+    Refresh submission commit log
+
 commit 033285d9151ceb7c4ec87e61b05f6c269913002a
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 15:15:54 2026 +0700
