@@ -1,3 +1,27 @@
+commit 07fee8734846b3b520e5f9c54763285c8d3d537e
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:46:07 2026 +0700
+
+    Regenerate and verify styled HW05 PDFs
+
+commit 1c7153be985f31ff5ff54dda0d92ae3604915e71
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:36:24 2026 +0700
+
+    Rewrite HW05 supporting reports for clear flow
+
+commit 47861fd2e8aab8ad18ae02bd88a58bde660f0d57
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:34:21 2026 +0700
+
+    Rewrite HW05 report in execution order
+
+commit 5694d82e09c5f70b73281b7ab9a4a6e827fd1e8a
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:30:25 2026 +0700
+
+    Refresh submission commit log
+
 commit 1eda2461d3a8c0b40bb58c264758a0160455bb60
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 16:30:21 2026 +0700
