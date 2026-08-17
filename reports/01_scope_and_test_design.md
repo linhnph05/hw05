@@ -1,6 +1,7 @@
 # HW05 Scope and Test Design
 
 Student ID: 23127081  
+Full Name: Nguyễn Phan Hùng Linh  
 Date: 2026-08-16  
 Tool: Apache JMeter 5.6.3
 
@@ -43,4 +44,3 @@ I added status-code assertions, JSON assertions, per-group CSV files, a
 password-reset token extractor, and distinct report listeners. The AI warned
 that View Results Tree uses memory during spikes. I keep it only in the short
 spike plan and use the raw JTL/HTML report as the main evidence.
-

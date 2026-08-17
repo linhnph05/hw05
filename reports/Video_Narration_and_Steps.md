@@ -5,7 +5,7 @@ later. Keep JMeter and Activity Monitor in the same frame.
 
 1. Open the backend terminal, JMeter, and Activity Monitor. Resize JMeter to
    the left and Activity Monitor to the right. Start recording.
-2. Say: “Em là sinh viên 23127081. Đây là bài HW05 về kiểm thử hiệu năng cho
+2. Say: “Em là Nguyễn Phan Hùng Linh, sinh viên 23127081. Đây là bài HW05 về kiểm thử hiệu năng cho
    EShop. Máy của em là MacBook Pro M1, 16 GB RAM. Em dùng Apache JMeter.”
 3. Show `23127081_Load_20260816.jmx` and `read_input.csv`. Say: “Load test
    dùng ba API đọc: giỏ hàng, lịch sử đơn, và chi tiết đơn. Test có 20 users,

@@ -1,5 +1,8 @@
 # AI Critique
 
+Student ID: 23127081  
+Full Name: Nguyễn Phan Hùng Linh
+
 The AI was helpful for making a first testing plan, but it was not correct by
 default. At first it suggested only one endpoint for each scenario. My
 assignment required three endpoints for each scenario, so I had to read the

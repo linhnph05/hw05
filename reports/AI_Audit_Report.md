@@ -1,5 +1,8 @@
 # AI Audit Report
 
+Student ID: 23127081  
+Full Name: Nguyễn Phan Hùng Linh
+
 ## Declaration
 
 I use AI tools for the following tasks. I used a second Codex/GPT-5.6 agent as
