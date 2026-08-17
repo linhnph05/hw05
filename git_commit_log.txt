@@ -1,3 +1,27 @@
+commit 15d1088b396c1686a4b3de4f0a54882d57c17925
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 20:21:48 2026 +0700
+
+    Regenerate report PDF with CLI evidence guidance
+
+commit 44a3d0696a1730ae69e3cd50f69745bdbdf358b7
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 20:19:19 2026 +0700
+
+    Document CLI and terminal evidence workflow
+
+commit a854b1f857d2941bb17ad66f7d9df134fbb72671
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 20:18:44 2026 +0700
+
+    Use absolute CSV paths in JMeter plans
+
+commit 6969530089de54ea11618ee355651ecf1534c0e0
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:48:26 2026 +0700
+
+    Refresh final submission commit log
+
 commit 6544322a7cd1bafbe4ac1af0979cbf23d9829d80
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 16:46:59 2026 +0700
