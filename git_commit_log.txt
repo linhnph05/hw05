@@ -1,3 +1,81 @@
+commit e85ab052167b9661567e1145bce84966ba8d8882
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 01:23:02 2026 +0700
+
+    Update reports with rerun results and video
+
+commit d15fe81ef3a3efd88a122447094c84e4598b123c
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 01:09:54 2026 +0700
+
+    Refresh JMeter dashboard screenshots
+
+commit f079410b7d0ccea9bb7e754db45453a96f74ac6a
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 01:02:13 2026 +0700
+
+    Rerun Endurance performance test
+
+commit b196096006fbf10d8f5b6b03dc93e62f8ae121de
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 00:51:02 2026 +0700
+
+    Rerun Spike performance test
+
+commit e0e6e9fee280800f8eda8c651198c84e38ced159
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 00:46:43 2026 +0700
+
+    Rerun Stress performance test
+
+commit b48faf561abbbc3813a0cda03f164727e4adbdd8
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 00:42:40 2026 +0700
+
+    Rerun Load performance test
+
+commit 91bcb03d8123bd4385ce16f3ce01dec56bf27e5d
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 00:27:40 2026 +0700
+
+    Embed hardware and htop evidence
+
+commit 6eb86a013bf344c8a190ee7d1afa1f56bb3f19f7
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Tue Aug 18 00:25:29 2026 +0700
+
+    Add performance bug report
+
+commit 05e73b1f910dff32564fb4e401a02c33d870848e
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 23:40:46 2026 +0700
+
+    Document automatic Load fixture setup
+
+commit 68c9a6ee6c8722eb0f1b16470390970abfab8060
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 23:39:03 2026 +0700
+
+    Create Load order fixture automatically
+
+commit 3fa034c4d6f51e89e6dc327311baf8cdd3da390f
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 21:37:03 2026 +0700
+
+    Clarify test data preconditions in report
+
+commit c9318094025b6bdc9ed23cd3243a44cc24988aad
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 21:23:57 2026 +0700
+
+    Fix Load order detail precondition
+
+commit cef22e667ea555331c2cda21b38220ad5621c54b
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 20:22:50 2026 +0700
+
+    Refresh submission commit log
+
 commit ac3f1743d6371eba6491a355cc93da4c5a9cc828
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 20:22:40 2026 +0700
