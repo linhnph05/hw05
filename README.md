@@ -17,8 +17,9 @@ analysis, endurance testing, and a continuous-testing proposal.
 | Scenarios | Load, Stress, Spike, and 10-minute endurance |
 | Endpoint groups | Read-heavy, auth-heavy, and transactional |
 | Error result | 0.00% errors in every measured run |
-| Endurance result | At least 92.70 RPS for 10 minutes at 100 users; p95 83 ms; peak backend RSS 76,000 KB |
+| Endurance result | At least 93.43 RPS for 10 minutes at 100 users; p95 35 ms; peak backend RSS 72,720 KB |
 | Performance issues | None observed in the measured runs |
+| Demo video | <https://youtu.be/IB1nEht4ZVg> |
 
 ## Reading order
 
@@ -39,10 +40,10 @@ Supporting evidence is stored in:
 
 | No. | Criteria | Maximum | Self-assessed |
 | --- | --- | ---: | ---: |
-| 1 | Task 1 — Load testing | 20 | 18 |
-| 2 | Task 1 — Stress testing | 20 | 18 |
-| 3 | Task 1 — Spike testing | 20 | 18 |
+| 1 | Task 1 — Load testing | 20 | 20 |
+| 2 | Task 1 — Stress testing | 20 | 20 |
+| 3 | Task 1 — Spike testing | 20 | 20 |
 | 4 | Task 2 — AI analysis and misinterpretation hunt | 10 | 10 |
 | 5 | Task 3 — Continuous Performance Testing proposal | 10 | 10 |
 | 6 | Agent Skill | 10 | 10 |
-|  | **Total** | **100** | **084** |
+|  | **Total** | **100** | **100** |

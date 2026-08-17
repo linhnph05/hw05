@@ -4,7 +4,7 @@ Student ID: 23127081
 
 Full name: Nguyễn Phan Hùng Linh
 
-Test date: 2026-08-16
+Test date: 2026-08-18
 
 Repository: <https://github.com/linhnph05/hw05>
 
@@ -153,31 +153,36 @@ I reused the Load workflow with 100 users for 600 seconds.
 jmeter -n -t test-plans/23127081_Load_20260816.jmx -l results/endurance.jtl -e -o results/endurance_html -j results/endurance_jmeter.log -Jload_threads=100 -Jload_ramp=60 -Jload_duration=600
 ```
 
+### 6.5 Demo video
+
+The demonstration video is available at <https://youtu.be/IB1nEht4ZVg>.
+
 ## 7. Step 5 — Review the measured results
 
 ### 7.1 Response results
 
 | Run | Samples | Throughput | Mean | p95 | Maximum | Errors |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Load | 5,348 | 17.8 RPS | 8.56 ms | 30 ms | 178 ms | 0.00% |
-| Stress | 8,522 | 47.3 RPS | 25.06 ms | 139 ms | 648 ms | 0.00% |
-| Spike baseline | 230 | 3.83 RPS | 10.43 ms | 36 ms | 139 ms | 0.00% |
-| Spike high load | 3,255 | 54.25 RPS | 23.37 ms | 103 ms | 622 ms | 0.00% |
-| Spike recovery | 226 | 3.77 RPS | 14.84 ms | 40 ms | 377 ms | 0.00% |
+| Load | 5,345 | 17.90 RPS | 7.94 ms | 28 ms | 262 ms | 0.00% |
+| Stress | 8,540 | 47.63 RPS | 24.06 ms | 92 ms | 651 ms | 0.00% |
+| Spike baseline | 231 | 3.91 RPS | 8.19 ms | 25 ms | 52 ms | 0.00% |
+| Spike high load | 3,327 | 56.24 RPS | 11.14 ms | 39 ms | 206 ms | 0.00% |
+| Spike recovery | 230 | 3.91 RPS | 8.35 ms | 22 ms | 127 ms | 0.00% |
 
 The Load test was stable at its planned traffic. The Stress test had a higher
 p95 than Load because it performed database writes, but it still completed
-without errors. During the Spike test, p95 increased to 103 ms at 30 users and
-returned to 40 ms in recovery. This shows that the backend recovered after the
+without errors. During the Spike test, p95 increased to 39 ms at 30 users and
+returned to about 22 ms in recovery. This shows that the backend recovered after the
 short traffic increase.
 
 ### 7.2 Backend resource results
 
 | Run | Average CPU | Peak CPU | Average RSS | Peak RSS |
 | --- | ---: | ---: | ---: | ---: |
-| Load | 1.99% | 17.3% | 33,530 KB | 45,744 KB |
-| Stress | 9.17% | 24.6% | 42,382 KB | 64,304 KB |
-| Spike | 3.72% | 18.0% | 34,357 KB | 63,664 KB |
+| Load | 1.87% | 12.6% | 33,925 KB | 45,872 KB |
+| Stress | 10.12% | 29.3% | 50,280 KB | 72,912 KB |
+| Spike | 2.68% | 16.0% | 38,908 KB | 64,368 KB |
+| Endurance | 7.65% | 24.1% | 57,287 KB | 72,720 KB |
 
 Stress used the most average CPU because registration and password reset write
 to SQLite. No measured run crashed, and all runs had a 0.00% error rate. I did
@@ -205,18 +210,19 @@ rendered HTML reports from the raw JTL files.
 ## 8. Step 6 — Determine the endurance threshold
 
 The endurance test ran for ten minutes with 100 users, a 60-second ramp-up,
-and a one-second think time. It completed 55,622 samples. The measured results
+and a one-second think time. It completed 56,058 samples. The measured results
 were:
 
-- throughput: **92.70 RPS** using the planned 600-second duration;
-- mean response time: **19.04 ms**;
-- p95 response time: **83 ms**;
-- maximum response time: **1,031 ms**;
+- throughput: **93.43 RPS** using the planned 600-second duration;
+- observed-window throughput: **93.58 RPS**;
+- mean response time: **9.36 ms**;
+- p95 response time: **35 ms**;
+- maximum response time: **273 ms**;
 - errors: **0.00%**;
-- backend peak CPU: **26.9%**; and
-- backend peak RSS: **76,000 KB**.
+- backend peak CPU: **24.1%**; and
+- backend peak RSS: **72,720 KB**.
 
-Therefore, the tested stable level on this computer is **at least 92.70 RPS
+Therefore, the tested stable level on this computer is **at least 93.43 RPS
 for ten minutes at 100 users**. This is not the absolute maximum capacity. The
 backend still had CPU headroom, and I did not increase traffic until failure.
 
@@ -225,15 +231,14 @@ backend still had CPU headroom, and I did not increase traffic until failure.
 After the tests, I asked the AI to analyse the raw JTL and resource CSV files.
 I then recalculated the important values.
 
-The AI reported a merged Spike p95 of 97 ms and a high-load-stage p95 of 105
-ms. My direct check of the raw data gave **93 ms** for the merged JTL and **103
-ms** for the high-load stage. The difference probably came from the percentile
-position or from mixing the merged and stage files.
+The AI reported a merged Spike p95 of 38 ms and a high-load-stage p95 of 39
+ms. My direct check of the raw elapsed values gave the same results.
 
-The AI calculated endurance throughput as 92.89 RPS from the observed time
-window. I report 92.70 RPS because I divide 55,622 samples by the planned 600
-seconds. Both calculations describe the same stable run, but neither proves an
-absolute hardware limit.
+The AI described **93.58 RPS** as the stable Endurance rate because it used the
+599.03-second observed JTL window. I report **93.43 RPS** for the planned test
+because I divide 56,058 samples by 600 seconds. The AI value is useful for the
+observed window, but it did not clearly separate that value from the planned
+duration result. Neither number proves an absolute hardware limit.
 
 ### 9.1 Review of AI recommendations
 
@@ -275,8 +280,8 @@ also repeat a failed performance comparison before blocking a release.
 
 I completed the Load, Stress, Spike, and endurance runs with raw JTL files,
 resource CSV files, JMeter logs, HTML reports, and dashboard screenshots. All
-measured runs had 0.00% errors. The strongest tested stable result was 92.70
-RPS for ten minutes with 100 users, p95 83 ms, and backend peak RSS 76,000 KB.
+measured runs had 0.00% errors. The strongest tested stable result was 93.43
+RPS for ten minutes with 100 users, p95 35 ms, and backend peak RSS 72,720 KB.
 
 The AI helped create a first plan and analyse the results, but it did not own
 the final answer. I changed the plan for the local environment and checked the

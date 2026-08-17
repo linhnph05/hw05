@@ -6,14 +6,15 @@ Full name: Nguyễn Phan Hùng Linh
 
 ## 1. Declaration
 
-I use AI tools for the following tasks. I used a second Codex/GPT-5.6 agent to
-help with test design and raw-result analysis. I acted as the human reviewer. I
-made the final scope, parameter, execution, and reporting decisions.
+I use AI tools for the following tasks. I used Codex/GPT-5.6 for the first
+test design and guided a separate Codex agent through the rerun analysis. I
+acted as the human reviewer and made the final scope, parameter, execution,
+and reporting decisions.
 
 The AI did not create the final JTL evidence. The measured files came from the
 JMeter runs on my computer.
 
-## 2. Interaction 1 — Test design
+## 2. Prompt 1 — Test design
 
 | Field | Record |
 | --- | --- |
@@ -61,21 +62,23 @@ I made these changes:
 - used smoke tests before the measured runs; and
 - kept View Results Tree only in the short Spike plan.
 
-## 3. Interaction 2 — Result analysis
+## 3. Prompt 2 — Result analysis
 
 | Field | Record |
 | --- | --- |
 | AI tool | Codex / GPT-5.6 |
-| Date and time | 2026-08-16 ICT |
-| Purpose | Analyse JTL and resource files and suggest thresholds |
+| Date and time | 2026-08-18 01:05 ICT |
+| Purpose | Analyse the rerun JTL and resource files and suggest thresholds |
 
 ### 3.1 My prompt
 
-> Read the raw JTL files in results/load.jtl, results/stress.jtl,
-> results/spike.jtl, and results/endurance.jtl plus their resource CSVs.
-> Analyze performance, propose thresholds and optimizations. Be concise but
-> show numbers and conclusions. Do not edit files. I will independently check
-> all values.
+> Analyze the new rerun evidence in `results/load.jtl`, `results/stress.jtl`,
+> the three Spike stage JTLs, merged `results/spike.jtl`,
+> `results/endurance.jtl`, and the four resource CSV files. Report samples,
+> observed RPS, errors, mean, p95, p99, maximum, CPU, and RSS. Identify the
+> stable endurance result, propose CI thresholds and optimizations, and use
+> only performance-related findings. Do not edit files. State whether a
+> genuine performance issue was found.
 
 ### 3.2 AI output
 
@@ -83,42 +86,44 @@ The AI produced this result table:
 
 | Run | Samples | RPS | Errors | Mean | p95 | p99 | Maximum |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Load | 5,348 | 17.90 | 0.00% | 8.56 ms | 30 ms | 68 ms | 178 ms |
-| Stress | 8,522 | 47.55 | 0.00% | 25.06 ms | 139 ms | 339 ms | 648 ms |
-| Spike | 3,711 | 18.77 | 0.00% | 22.05 ms | 97 ms | 403 ms | 622 ms |
-| Endurance | 55,622 | 92.89 | 0.00% | 19.04 ms | 83 ms | 293 ms | 1,031 ms |
+| Load | 5,345 | 17.91 | 0.00% | 7.94 ms | 28 ms | 67 ms | 262 ms |
+| Stress | 8,540 | 47.64 | 0.00% | 24.06 ms | 91 ms | 265 ms | 651 ms |
+| Spike baseline | 231 | 3.91 | 0.00% | 8.19 ms | 25 ms | 39 ms | 52 ms |
+| Spike high | 3,327 | 56.26 | 0.00% | 11.14 ms | 39 ms | 143 ms | 206 ms |
+| Spike recovery | 230 | 3.91 | 0.00% | 8.35 ms | 22 ms | 60 ms | 127 ms |
+| Spike merged | 3,788 | 19.74 | 0.00% | 10.79 ms | 38 ms | 127 ms | 206 ms |
+| Endurance | 56,058 | 93.58 | 0.00% | 9.36 ms | 35 ms | 91 ms | 273 ms |
 
 It reported these backend resource values:
 
 | Run | Average CPU | Peak CPU | Average RSS | Peak RSS |
 | --- | ---: | ---: | ---: | ---: |
-| Load | 1.99% | 17.3% | 33,530 KB | 45,744 KB |
-| Stress | 9.17% | 24.6% | 42,382 KB | 64,304 KB |
-| Spike | 3.72% | 18.0% | 34,357 KB | 63,664 KB |
-| Endurance | 7.76% | 26.9% | 57,294 KB | 76,000 KB |
+| Load | 1.87% | 12.6% | 33,925 KB | 45,872 KB |
+| Stress | 10.12% | 29.3% | 50,280 KB | 72,912 KB |
+| Spike | 2.68% | 16.0% | 38,908 KB | 64,368 KB |
+| Endurance | 7.65% | 24.1% | 57,287 KB | 72,720 KB |
 
-The AI suggested CI gates of error rate at most 1%, endurance p95 at most 150
-ms, p99 at most 600 ms, and throughput at least 85 RPS. It suggested database
-indexes and SQLite WAL as possible improvements. It said a normal connection
-pool was unsuitable for this local SQLite SUT and that caching was not
-supported by the current evidence.
+The AI found no genuine performance issue. It suggested an Endurance gate of
+error rate at most 1%, throughput at least 85 RPS, p95 at most 75 ms, and p99
+at most 200 ms. It suggested a Stress p95 limit of 150 ms and a Spike p95
+limit of 100 ms. It treated database indexes and SQLite WAL as experiments,
+not urgent fixes. It said a connection pool or cache was not supported by the
+evidence.
 
 ### 3.3 My verification and correction
 
-I recalculated the important values from the JTL elapsed column. The Load,
-Stress, and Endurance percentiles agreed with the AI output.
+I recalculated the important values from the JTL elapsed column. The samples,
+errors, mean, Spike percentiles, Endurance percentiles, and resource values
+agreed with the AI output after rounding. The Stress dashboard uses an
+interpolated p95 of 91.95 ms, so I show 92 ms in the main report instead of
+the AI's nearest-rank 91 ms.
 
-I found two Spike percentile differences:
-
-- the AI reported 97 ms for the merged Spike p95; my raw-data check gave
-  **93 ms**; and
-- the AI reported 105 ms for the high-load stage p95; my raw-data check gave
-  **103 ms**.
-
-I also report endurance throughput as **92.70 RPS** because I divide 55,622
-samples by the planned 600 seconds. The AI used the observed JTL time window
-and calculated 92.89 RPS. This is a denominator difference. Neither number is
-proof of the absolute hardware limit.
+The important correction is the Endurance denominator. The AI called **93.58
+RPS** the stable rate because it divided by the 599.03-second observed JTL
+window. For the planned ten-minute result, I divide 56,058 samples by 600
+seconds and report **93.43 RPS**. The AI calculation is useful, but it did not
+clearly separate observed-window throughput from planned-duration throughput.
+Neither value proves the absolute hardware limit.
 
 ## 4. Human responsibility
 
