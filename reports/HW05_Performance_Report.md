@@ -1,8 +1,11 @@
 # HW05 — AI-assisted Performance Testing
 
-Student ID: 23127081  
-Full name: Nguyễn Phan Hùng Linh  
-Test date: 2026-08-16  
+Student ID: 23127081
+
+Full name: Nguyễn Phan Hùng Linh
+
+Test date: 2026-08-16
+
 Repository: <https://github.com/linhnph05/hw05>
 
 ## 1. Purpose

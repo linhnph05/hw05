@@ -1,7 +1,9 @@
 # HW05 AI Performance Testing
 
-Student ID: 23127081  
-Full name: Nguyễn Phan Hùng Linh  
+Student ID: 23127081
+
+Full name: Nguyễn Phan Hùng Linh
+
 Repository: <https://github.com/linhnph05/hw05>
 
 ## Submission summary
