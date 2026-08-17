@@ -96,10 +96,11 @@ Each plan reads its own CSV file. The three listener types are different, as
 required. For the real measurements, the raw JTL and generated HTML dashboard
 are the main evidence.
 
-The Load and endurance tests require the test account to have at least one
-completed order. After a database reset, I complete one checkout before the
-test. The plan then reads `/api/orders/my-orders`, extracts the newest order
-ID, and uses that value for `GET /api/orders/{id}`.
+The Load plan has a one-user setup group that creates one order before the
+measured traffic starts. The setup sample is excluded from the JMeter results,
+so it does not change the three measured endpoints. The plan then reads
+`/api/orders/my-orders`, extracts the newest order ID, and uses that value for
+`GET /api/orders/{id}`. The endurance run reuses the same setup.
 
 ## 6. Step 4 — Run the tests
 
