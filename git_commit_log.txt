@@ -1,3 +1,9 @@
+commit 6544322a7cd1bafbe4ac1af0979cbf23d9829d80
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 16:46:59 2026 +0700
+
+    Package rewritten HW05 reports
+
 commit 07fee8734846b3b520e5f9c54763285c8d3d537e
 Author: linhnph05 <linhnph05@gmail.com>
 Date:   Mon Aug 17 16:46:07 2026 +0700
