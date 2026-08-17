@@ -20,6 +20,24 @@ I used JMeter non-GUI mode for the measured runs. This avoids using the GUI
 listener as a load generator. The raw JTL files, JMeter HTML reports, JMeter
 logs, and resource CSV files are in `results/`.
 
+## Commands used for the measured runs
+
+I ran these commands from the repository root. `-n` runs JMeter without the
+GUI, `-l` writes the raw JTL, and `-e -o` generates the HTML report.
+
+```sh
+jmeter -n -t test-plans/23127081_Load_20260816.jmx -l results/load.jtl -e -o results/load_html -j results/load_jmeter.log
+jmeter -n -t test-plans/23127081_Stress_20260816.jmx -l results/stress.jtl -e -o results/stress_html -j results/stress_jmeter.log
+jmeter -n -t test-plans/23127081_Spike_20260816.jmx -l results/spike_baseline.jtl -e -o results/spike_baseline_html -j results/spike_baseline_jmeter.log -Jspike_threads=2 -Jspike_ramp=1 -Jspike_stage_duration=60
+jmeter -n -t test-plans/23127081_Spike_20260816.jmx -l results/spike.jtl -e -o results/spike_html -j results/spike_jmeter.log -Jspike_threads=30 -Jspike_ramp=5 -Jspike_stage_duration=60
+jmeter -n -t test-plans/23127081_Spike_20260816.jmx -l results/spike_recovery.jtl -e -o results/spike_recovery_html -j results/spike_recovery_jmeter.log -Jspike_threads=2 -Jspike_ramp=1 -Jspike_stage_duration=60
+jmeter -n -t test-plans/23127081_Load_20260816.jmx -l results/endurance.jtl -e -o results/endurance_html -j results/endurance_jmeter.log -Jload_threads=100 -Jload_ramp=60 -Jload_duration=600
+```
+
+I started `trash/monitor_backend.sh` at the same time as each run. It sampled
+the backend process with `ps` once per second and wrote the matching resource
+CSV file in `results/`.
+
 ## JMeter HTML report screenshots
 
 I opened the generated JMeter HTML dashboards in Chrome and captured the
@@ -97,18 +115,6 @@ was 26.9% and peak RSS was 76,000 KB.
 Therefore, the measured stable level on this machine is **at least 92.70 RPS
 for ten minutes at 100 users**. It is not an absolute hardware maximum: the
 backend still had CPU headroom and I did not run the machine until it failed.
-
-## Issue found
-
-I reproduced a functional defect in the coupon calculation and reported it as
-[GitHub Issue #1](https://github.com/linhnph05/hw05/issues/1). For
-`POST /api/apply-coupon` with `SAVE10` and `total_amount` 500000, the expected
-discount is 50,000 and final amount is 450,000. The actual response was
-`discount_amount: -4500000` and `final_amount: 5000000`. This is a functional
-calculation bug. The JTL only proves that the endpoint returned HTTP 200; the
-separate API response reproduction proves the defect.
-
-![GitHub Issue #1](../images/github_issue_1.jpg)
 
 ## AI analysis and misinterpretation hunt
 

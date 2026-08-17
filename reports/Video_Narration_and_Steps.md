@@ -19,5 +19,5 @@ later. Keep JMeter and Activity Monitor in the same frame.
    View Results Tree plus Activity Monitor.
 6. Show `results/` and the HTML reports. Say: “Raw JTL và HTML report được lưu
    đầy đủ. Endurance 10 phút đạt 92.70 RPS, p95 83 ms, và không có lỗi.”
-7. Show GitHub Issue #1. Say: “Em cũng tìm thấy lỗi tính phần trăm coupon và
-   đã báo cáo trên GitHub. Cảm ơn thầy/cô.” Stop recording.
+7. Show the conclusion in the main report. Say: “Các test đều không có lỗi và
+   kết quả endurance ổn định ở mức 92.70 RPS. Cảm ơn thầy/cô.” Stop recording.

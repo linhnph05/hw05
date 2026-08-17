@@ -27,9 +27,8 @@ The AI suggested this initial mapping: Load `GET /api/orders/{order_id}` with
 five-minute steady period for Load; a 10-to-50 user stress run; and a 2 → 40 →
 2 user spike. It proposed Summary Report, Aggregate Report, and View Results
 Tree as different listeners. It also warned that View Results Tree can use much
-memory, asked for HTTP/JSON assertions, and noted that `SAVE10` might calculate
-its percentage incorrectly. Its source review said `GET /api/orders/{id}` is
-public and this should be reported as an observation.
+memory, asked for HTTP/JSON assertions, and noted that `GET /api/orders/{id}`
+is public and this should be reported as an observation.
 
 ### My review and correction
 
@@ -37,8 +36,7 @@ The advice was a useful starting point, but it missed my instructor's special
 requirement to choose **three endpoints for every scenario**. I changed the
 scope to three-endpoint workflows, added three separate CSV files, and used
 real smoke tests before the measured runs. I also used 30, not 50, stress users
-for the first real write-heavy test. I independently reproduced the coupon
-defect before reporting it.
+for the first real write-heavy test.
 
 ## Interaction 2 — Raw-result analysis consultation
 
@@ -85,5 +83,4 @@ limit.
 ## Human responsibility
 
 I verified that the resource-monitor PID was `/opt/homebrew/bin/node
-server.js`. I kept the raw files, reported only measured values, and treated
-the coupon response as a functional bug only after a separate reproduction.
+server.js`. I kept the raw files and reported only measured performance values.

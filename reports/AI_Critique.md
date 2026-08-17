@@ -24,6 +24,6 @@ The AI made good recommendations too. Database indexes and SQLite WAL are
 possible improvements, while a normal database connection pool is not a good
 fit for one local SQLite connection. The main lesson is that AI is a planning
 assistant, not the owner of the result. I should give it clear constraints,
-keep raw artifacts, reproduce functional bugs separately, and check every
-number that will be used in a conclusion. I remain responsible for the test
+keep raw artifacts, and check every number that will be used in a conclusion.
+I remain responsible for the test
 scope, measurements, and final report.

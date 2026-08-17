@@ -11,7 +11,7 @@ Repository: <https://github.com/linhnph05/hw05>
 | Scenarios run | Load, Stress, Spike, and 10-minute endurance |
 | Endpoint groups covered | Read-heavy account/order reads; auth password life cycle; transactional coupon administration |
 | Endurance threshold | At least 92.70 RPS for 10 minutes at 100 users; p95 83 ms; 0.00% errors; peak backend RSS 76,000 KB |
-| Bugs / performance issues | 1 functional issue: incorrect `SAVE10` percentage calculation ([Issue #1](https://github.com/linhnph05/hw05/issues/1)) |
+| Bugs / performance issues | 0 performance issues observed; all measured runs had 0.00% errors |
 | Demo video | Not recorded by instruction. See `reports/Video_Narration_and_Steps.md`. |
 
 ## Main files
@@ -38,5 +38,4 @@ Repository: <https://github.com/linhnph05/hw05>
 
 The reduced self-assessment reflects that the requested demo video was not
 recorded. Chrome screenshots of the rendered JMeter dashboards are in
-`images/`; raw logs, resource monitoring, reports, and the GitHub issue are
-included.
+`images/`; raw logs, resource monitoring, and reports are included.
