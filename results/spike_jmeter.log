@@ -1,196 +1,195 @@
-2026-08-16 13:47:13,363 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2026-08-16 13:47:13,440 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
-2026-08-16 13:47:13,441 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
-2026-08-16 13:47:13,441 INFO o.a.j.JMeter: Setting JMeter property: spike_threads=30
-2026-08-16 13:47:13,442 INFO o.a.j.JMeter: Setting JMeter property: spike_ramp=5
-2026-08-16 13:47:13,442 INFO o.a.j.JMeter: Setting JMeter property: spike_stage_duration=60
-2026-08-16 13:47:13,454 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2026-08-16 13:47:13,454 INFO o.a.j.JMeter: Version 5.6.3
-2026-08-16 13:47:13,454 INFO o.a.j.JMeter: java.version=21.0.7
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: os.name=Mac OS X
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: os.arch=aarch64
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: os.version=15.7.3
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: file.encoding=UTF-8
-2026-08-16 13:47:13,455 INFO o.a.j.JMeter: java.awt.headless=true
-2026-08-16 13:47:13,456 INFO o.a.j.JMeter: Max memory     =1073741824
-2026-08-16 13:47:13,456 INFO o.a.j.JMeter: Available Processors =8
-2026-08-16 13:47:13,476 INFO o.a.j.JMeter: Default Locale=English (EN)
-2026-08-16 13:47:13,478 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2026-08-16 13:47:13,479 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
-2026-08-16 13:47:13,479 INFO o.a.j.JMeter: user.dir  =/Users/nguyenphanthangthong/hacking/ctf/learning/hw05
-2026-08-16 13:47:13,480 INFO o.a.j.JMeter: PWD       =/Users/nguyenphanthangthong/hacking/ctf/learning/hw05
-2026-08-16 13:47:13,485 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: MacBook-Pro-cua-HuLi.local FullName: localhost
-2026-08-16 13:47:13,511 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html'
-2026-08-16 13:47:13,515 INFO o.a.j.s.FileServer: Default base='/Users/nguyenphanthangthong/hacking/ctf/learning/hw05'
-2026-08-16 13:47:13,518 INFO o.a.j.s.FileServer: Set new base='/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/test-plans'
-2026-08-16 13:47:13,919 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2026-08-16 13:47:14,001 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2026-08-16 13:47:14,009 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2026-08-16 13:47:14,017 INFO o.a.j.s.SaveService: Loading file: test-plans/23127081_Spike_20260816.jmx
-2026-08-16 13:47:14,163 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-08-16 13:47:14,163 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-08-16 13:47:14,163 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-08-16 13:47:14,163 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-08-16 13:47:14,164 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2026-08-16 13:47:14,164 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2026-08-16 13:47:14,225 INFO o.a.j.JMeter: Creating summariser <summary>
-2026-08-16 13:47:14,235 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
-2026-08-16 13:47:14,236 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results/spike.jtl
-2026-08-16 13:47:14,236 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
-2026-08-16 13:47:14,237 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
-2026-08-16 13:47:14,245 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
-2026-08-16 13:47:14,249 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
-2026-08-16 13:47:14,250 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
-2026-08-16 13:47:14,251 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
-2026-08-16 13:47:14,257 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,258 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,258 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,258 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,258 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,259 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,259 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,259 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,259 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,260 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2026-08-16 13:47:14,261 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
-2026-08-16 13:47:14,262 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
-2026-08-16 13:47:14,262 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
-2026-08-16 13:47:14,263 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
-2026-08-16 13:47:14,263 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
-2026-08-16 13:47:14,264 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
-2026-08-16 13:47:14,290 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-08-16 13:47:14,291 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-08-16 13:47:14,291 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-08-16 13:47:14,299 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2026-08-16 13:47:14,299 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2026-08-16 13:47:14,433 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
-2026-08-16 13:47:14,643 INFO o.a.j.JMeter: Running test (1786862834643)
-2026-08-16 13:47:14,693 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Spike transaction stage
-2026-08-16 13:47:14,694 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group Spike transaction stage.
-2026-08-16 13:47:14,694 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-08-16 13:47:14,695 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=30 ramp-up=5 delayedStart=false
-2026-08-16 13:47:14,774 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-08-16 13:47:14,774 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-08-16 13:47:14,815 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-1
-2026-08-16 13:47:14,817 INFO o.a.j.s.FileServer: Stored: test-data/transaction_input.csv
-2026-08-16 13:47:14,982 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-2
-2026-08-16 13:47:15,143 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-3
-2026-08-16 13:47:15,308 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-4
-2026-08-16 13:47:15,391 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = MacBook-Pro-cua-HuLi.local
-2026-08-16 13:47:15,410 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2026-08-16 13:47:15,413 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2026-08-16 13:47:15,413 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2026-08-16 13:47:15,413 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2026-08-16 13:47:15,413 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2026-08-16 13:47:15,470 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-5
-2026-08-16 13:47:15,645 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-6
-2026-08-16 13:47:15,794 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-7
-2026-08-16 13:47:15,963 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-8
-2026-08-16 13:47:16,128 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-9
-2026-08-16 13:47:16,289 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-10
-2026-08-16 13:47:16,451 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-11
-2026-08-16 13:47:16,619 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-12
-2026-08-16 13:47:16,785 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-13
-2026-08-16 13:47:16,949 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-14
-2026-08-16 13:47:17,110 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-15
-2026-08-16 13:47:17,281 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-16
-2026-08-16 13:47:17,447 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-17
-2026-08-16 13:47:17,611 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-18
-2026-08-16 13:47:17,773 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-19
-2026-08-16 13:47:17,933 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-20
-2026-08-16 13:47:18,100 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-21
-2026-08-16 13:47:18,265 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-22
-2026-08-16 13:47:18,421 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-23
-2026-08-16 13:47:18,585 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-24
-2026-08-16 13:47:18,754 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-25
-2026-08-16 13:47:18,916 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-26
-2026-08-16 13:47:19,083 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-27
-2026-08-16 13:47:19,250 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-28
-2026-08-16 13:47:19,412 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-29
-2026-08-16 13:47:19,579 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-30
-2026-08-16 13:47:30,225 INFO o.a.j.r.Summariser: summary +    722 in 00:00:15 =   46.6/s Avg:    16 Min:     1 Max:   286 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
-2026-08-16 13:48:00,059 INFO o.a.j.r.Summariser: summary +   1670 in 00:00:30 =   55.8/s Avg:    33 Min:     0 Max:   622 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
-2026-08-16 13:48:00,061 INFO o.a.j.r.Summariser: summary =   2392 in 00:00:45 =   52.7/s Avg:    28 Min:     0 Max:   622 Err:     0 (0.00%)
-2026-08-16 13:48:14,238 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-6
-2026-08-16 13:48:14,245 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-7
-2026-08-16 13:48:14,336 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-27
-2026-08-16 13:48:14,347 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-20
-2026-08-16 13:48:14,358 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-11
-2026-08-16 13:48:14,378 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-18
-2026-08-16 13:48:14,380 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-30
-2026-08-16 13:48:14,384 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-4
-2026-08-16 13:48:14,393 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-17
-2026-08-16 13:48:14,393 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-23
-2026-08-16 13:48:14,398 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-10
-2026-08-16 13:48:14,402 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-8
-2026-08-16 13:48:14,407 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-12
-2026-08-16 13:48:14,536 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-24
-2026-08-16 13:48:14,548 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-9
-2026-08-16 13:48:14,550 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-3
-2026-08-16 13:48:14,553 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-1
-2026-08-16 13:48:14,611 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-19
-2026-08-16 13:48:14,629 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-2
-2026-08-16 13:48:14,658 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-13
-2026-08-16 13:48:14,658 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-15
-2026-08-16 13:48:14,684 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-16
-2026-08-16 13:48:14,716 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Spike transaction stage 1-5
-2026-08-16 13:48:14,716 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-5
-2026-08-16 13:48:14,720 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-22
-2026-08-16 13:48:14,730 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-29
-2026-08-16 13:48:14,732 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-28
-2026-08-16 13:48:14,732 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-14
-2026-08-16 13:48:14,745 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-21
-2026-08-16 13:48:14,747 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-25
-2026-08-16 13:48:14,750 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-26
-2026-08-16 13:48:14,750 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-08-16 13:48:14,751 INFO o.a.j.s.FileServer: Close: test-data/transaction_input.csv
-2026-08-16 13:48:14,752 INFO o.a.j.r.Summariser: summary +    863 in 00:00:15 =   58.7/s Avg:     9 Min:     0 Max:   146 Err:     0 (0.00%) Active: 0 Started: 30 Finished: 30
-2026-08-16 13:48:14,753 INFO o.a.j.r.Summariser: summary =   3255 in 00:01:00 =   54.2/s Avg:    23 Min:     0 Max:   622 Err:     0 (0.00%)
-2026-08-16 13:48:14,754 INFO o.a.j.JMeter: Generating Dashboard
-2026-08-16 13:48:14,754 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
-2026-08-16 13:48:14,783 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
-2026-08-16 13:48:15,489 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
-2026-08-16 13:48:15,489 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
-2026-08-16 13:48:15,494 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
-2026-08-16 13:48:15,495 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
-2026-08-16 13:48:15,504 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
-2026-08-16 13:48:15,506 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
-2026-08-16 13:48:15,506 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
-2026-08-16 13:48:15,506 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
-2026-08-16 13:48:15,688 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
-2026-08-16 13:48:15,689 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
-2026-08-16 13:48:15,689 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
-2026-08-16 13:48:15,689 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
-2026-08-16 13:48:15,836 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
-2026-08-16 13:48:15,837 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 22785 samples
-2026-08-16 13:48:15,837 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
-2026-08-16 13:48:15,838 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
-2026-08-16 13:48:15,838 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
-2026-08-16 13:48:15,838 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
-2026-08-16 13:48:15,839 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
-2026-08-16 13:48:15,839 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
-2026-08-16 13:48:15,843 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
-2026-08-16 13:48:15,845 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
-2026-08-16 13:48:15,845 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
-2026-08-16 13:48:15,850 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
-2026-08-16 13:48:15,850 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 48825 samples
-2026-08-16 13:48:15,850 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 9765 samples
-2026-08-16 13:48:15,850 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 3255 samples
-2026-08-16 13:48:15,851 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 3255 samples produced in 1s 8 ms on channel 0
-2026-08-16 13:48:15,851 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
-2026-08-16 13:48:15,971 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
-2026-08-16 13:48:15,971 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
-2026-08-16 13:48:15,972 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
-2026-08-16 13:48:15,973 INFO o.a.j.r.d.JsonExporter: Checking output folder
-2026-08-16 13:48:15,973 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html/statistics.json
-2026-08-16 13:48:16,038 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
-2026-08-16 13:48:16,042 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html
-2026-08-16 13:48:16,195 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html, creating folder structure
-2026-08-16 13:48:16,198 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html', got message: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html, found non empty folder with following content [/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html/statistics.json], will be ignored
-2026-08-16 13:48:16,629 INFO o.a.j.JMeter: Dashboard generated
+2026-08-18 00:48:09,837 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-08-18 00:48:09,896 INFO o.a.j.JMeter: Loading user properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/user.properties
+2026-08-18 00:48:09,897 INFO o.a.j.JMeter: Loading system properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/system.properties
+2026-08-18 00:48:09,897 INFO o.a.j.JMeter: Setting JMeter property: spike_threads=30
+2026-08-18 00:48:09,898 INFO o.a.j.JMeter: Setting JMeter property: spike_ramp=5
+2026-08-18 00:48:09,898 INFO o.a.j.JMeter: Setting JMeter property: spike_stage_duration=60
+2026-08-18 00:48:09,904 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: Version 5.6.3
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: java.version=21.0.7
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: os.name=Mac OS X
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: os.arch=aarch64
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: os.version=15.7.3
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: java.awt.headless=true
+2026-08-18 00:48:09,905 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-08-18 00:48:09,906 INFO o.a.j.JMeter: Available Processors =8
+2026-08-18 00:48:09,921 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-08-18 00:48:09,922 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-08-18 00:48:09,922 INFO o.a.j.JMeter: JMeterHome=/opt/homebrew/Cellar/jmeter/5.6.3/libexec
+2026-08-18 00:48:09,922 INFO o.a.j.JMeter: user.dir  =/Users/nguyenphanthangthong/hacking/ctf/learning/hw05
+2026-08-18 00:48:09,922 INFO o.a.j.JMeter: PWD       =/Users/nguyenphanthangthong/hacking/ctf/learning/hw05
+2026-08-18 00:48:09,924 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: MacBook-Pro-cua-HuLi.local FullName: localhost
+2026-08-18 00:48:09,942 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html'
+2026-08-18 00:48:09,946 INFO o.a.j.s.FileServer: Default base='/Users/nguyenphanthangthong/hacking/ctf/learning/hw05'
+2026-08-18 00:48:09,948 INFO o.a.j.s.FileServer: Set new base='/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/test-plans'
+2026-08-18 00:48:10,340 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-08-18 00:48:10,424 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-08-18 00:48:10,439 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-08-18 00:48:10,452 INFO o.a.j.s.SaveService: Loading file: test-plans/23127081_Spike_20260816.jmx
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-08-18 00:48:10,591 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-08-18 00:48:10,630 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-08-18 00:48:10,635 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-08-18 00:48:10,636 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: results/spike.jtl
+2026-08-18 00:48:10,636 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/reportgenerator.properties
+2026-08-18 00:48:10,637 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-08-18 00:48:10,643 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-08-18 00:48:10,645 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-08-18 00:48:10,646 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-08-18 00:48:10,647 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-08-18 00:48:10,674 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,683 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,683 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,684 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,685 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-08-18 00:48:10,689 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-08-18 00:48:10,689 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-08-18 00:48:10,689 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-08-18 00:48:10,690 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-08-18 00:48:10,690 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-08-18 00:48:10,690 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-08-18 00:48:10,715 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-08-18 00:48:10,716 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-08-18 00:48:10,716 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-08-18 00:48:10,722 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-08-18 00:48:10,722 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-08-18 00:48:10,805 INFO o.a.j.r.ClassFinder: Will scan jar /opt/homebrew/Cellar/jmeter/5.6.3/libexec/lib/ext/jmeter-plugins-manager-1.9.jar with filter ExtendsClassFilter [parents=[interface org.apache.jmeter.functions.Function], inner=false, contains=null, notContains=null]. Consider exposing JMeter plugins via META-INF/services, and add JMeter-Skip-Class-Scanning=true manifest attribute so JMeter can skip classfile scanning
+2026-08-18 00:48:10,952 INFO o.a.j.JMeter: Running test (1786988890951)
+2026-08-18 00:48:10,975 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Spike transaction stage
+2026-08-18 00:48:10,975 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group Spike transaction stage.
+2026-08-18 00:48:10,976 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-08-18 00:48:10,976 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=30 ramp-up=5 delayedStart=false
+2026-08-18 00:48:11,035 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-08-18 00:48:11,035 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-08-18 00:48:11,132 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-1
+2026-08-18 00:48:11,134 INFO o.a.j.s.FileServer: Stored: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/test-data/transaction_input.csv
+2026-08-18 00:48:11,297 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-2
+2026-08-18 00:48:11,479 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-3
+2026-08-18 00:48:11,648 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-4
+2026-08-18 00:48:11,683 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = MacBook-Pro-cua-HuLi.local
+2026-08-18 00:48:11,692 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-08-18 00:48:11,694 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-08-18 00:48:11,695 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-08-18 00:48:11,695 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-08-18 00:48:11,695 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-08-18 00:48:11,809 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-5
+2026-08-18 00:48:11,973 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-6
+2026-08-18 00:48:12,139 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-7
+2026-08-18 00:48:12,222 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-8
+2026-08-18 00:48:12,459 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-9
+2026-08-18 00:48:12,631 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-10
+2026-08-18 00:48:12,794 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-11
+2026-08-18 00:48:12,942 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-12
+2026-08-18 00:48:13,121 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-13
+2026-08-18 00:48:13,201 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-14
+2026-08-18 00:48:13,430 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-15
+2026-08-18 00:48:13,597 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-16
+2026-08-18 00:48:13,751 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-17
+2026-08-18 00:48:13,910 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-18
+2026-08-18 00:48:14,069 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-19
+2026-08-18 00:48:14,242 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-20
+2026-08-18 00:48:14,396 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-21
+2026-08-18 00:48:14,552 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-22
+2026-08-18 00:48:14,722 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-23
+2026-08-18 00:48:14,883 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-24
+2026-08-18 00:48:15,045 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-25
+2026-08-18 00:48:15,208 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-26
+2026-08-18 00:48:15,374 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-27
+2026-08-18 00:48:15,537 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-28
+2026-08-18 00:48:15,702 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-29
+2026-08-18 00:48:15,857 INFO o.a.j.t.JMeterThread: Thread started: Spike transaction stage 1-30
+2026-08-18 00:48:30,005 INFO o.a.j.r.Summariser: summary +    938 in 00:00:19 =   49.2/s Avg:    11 Min:     1 Max:    85 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-08-18 00:49:00,004 INFO o.a.j.r.Summariser: summary +   1760 in 00:00:30 =   58.7/s Avg:     9 Min:     0 Max:   206 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2026-08-18 00:49:00,005 INFO o.a.j.r.Summariser: summary =   2698 in 00:00:49 =   55.0/s Avg:    10 Min:     0 Max:   206 Err:     0 (0.00%)
+2026-08-18 00:49:10,536 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-4
+2026-08-18 00:49:10,537 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-13
+2026-08-18 00:49:10,562 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-26
+2026-08-18 00:49:10,596 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-20
+2026-08-18 00:49:10,596 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-14
+2026-08-18 00:49:10,632 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-5
+2026-08-18 00:49:10,637 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-7
+2026-08-18 00:49:10,638 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-27
+2026-08-18 00:49:10,638 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-11
+2026-08-18 00:49:10,641 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-6
+2026-08-18 00:49:10,643 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-23
+2026-08-18 00:49:10,644 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-25
+2026-08-18 00:49:10,647 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-8
+2026-08-18 00:49:10,648 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-15
+2026-08-18 00:49:10,651 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-3
+2026-08-18 00:49:10,651 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-29
+2026-08-18 00:49:10,652 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-19
+2026-08-18 00:49:10,652 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-24
+2026-08-18 00:49:10,652 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-1
+2026-08-18 00:49:10,655 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-28
+2026-08-18 00:49:10,693 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-12
+2026-08-18 00:49:10,813 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-18
+2026-08-18 00:49:10,910 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-22
+2026-08-18 00:49:10,926 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-17
+2026-08-18 00:49:10,929 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-9
+2026-08-18 00:49:10,933 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-30
+2026-08-18 00:49:10,934 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-21
+2026-08-18 00:49:10,934 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-16
+2026-08-18 00:49:10,935 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-2
+2026-08-18 00:49:10,938 INFO o.a.j.t.JMeterThread: Thread finished: Spike transaction stage 1-10
+2026-08-18 00:49:10,939 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-08-18 00:49:10,940 INFO o.a.j.s.FileServer: Close: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/test-data/transaction_input.csv
+2026-08-18 00:49:10,945 INFO o.a.j.r.Summariser: summary +    629 in 00:00:11 =   57.5/s Avg:    15 Min:     0 Max:   197 Err:     0 (0.00%) Active: 0 Started: 30 Finished: 30
+2026-08-18 00:49:10,946 INFO o.a.j.r.Summariser: summary =   3327 in 00:01:00 =   55.5/s Avg:    11 Min:     0 Max:   206 Err:     0 (0.00%)
+2026-08-18 00:49:10,952 INFO o.a.j.JMeter: Generating Dashboard
+2026-08-18 00:49:10,952 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-08-18 00:49:10,992 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-08-18 00:49:12,506 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-08-18 00:49:12,506 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-08-18 00:49:12,512 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-08-18 00:49:12,513 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-08-18 00:49:12,522 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-08-18 00:49:12,526 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-08-18 00:49:12,526 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-08-18 00:49:12,526 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-08-18 00:49:12,656 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-08-18 00:49:12,659 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-08-18 00:49:12,661 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-08-18 00:49:12,662 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-08-18 00:49:12,859 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-08-18 00:49:12,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 23289 samples
+2026-08-18 00:49:12,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-08-18 00:49:12,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-08-18 00:49:12,860 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-08-18 00:49:12,861 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-08-18 00:49:12,861 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-08-18 00:49:12,862 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-08-18 00:49:12,866 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-08-18 00:49:12,867 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-08-18 00:49:12,867 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-08-18 00:49:12,867 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-08-18 00:49:12,868 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 49905 samples
+2026-08-18 00:49:12,868 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 9981 samples
+2026-08-18 00:49:12,868 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 3327 samples
+2026-08-18 00:49:12,868 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 3327 samples produced in 1s 824 ms on channel 0
+2026-08-18 00:49:12,868 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-08-18 00:49:13,049 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-08-18 00:49:13,049 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-08-18 00:49:13,050 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-08-18 00:49:13,050 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-08-18 00:49:13,050 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html/statistics.json
+2026-08-18 00:49:13,208 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-08-18 00:49:13,212 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html
+2026-08-18 00:49:13,364 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html, creating folder structure
+2026-08-18 00:49:13,368 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/homebrew/Cellar/jmeter/5.6.3/libexec/bin/report-template' to '/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html', got message: /Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html, found non empty folder with following content [/Users/nguyenphanthangthong/hacking/ctf/learning/hw05/results/spike_html/statistics.json], will be ignored
+2026-08-18 00:49:13,813 INFO o.a.j.JMeter: Dashboard generated
