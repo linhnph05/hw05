@@ -70,9 +70,9 @@ write test cleans up after itself.
 ## AI design and my review
 
 I first asked the AI for endpoint and parameter ideas. It suggested one
-endpoint for each scenario. I corrected this because the assignment requires
-three endpoints for each scenario. I also added the CSV files, HTTP assertions,
-reset-token extractor, and distinct JMeter listeners.
+endpoint for each scenario. That would meet the HW05 endpoint-group rule, but
+I chose a broader scope of three endpoints in each workflow. I added the CSV
+files, HTTP assertions, reset-token extractor, and distinct JMeter listeners.
 
 The AI proposed a 50-user stress run. I used 30 users for the first real stress
 run because this is a student laptop and the SUT writes to one SQLite database.

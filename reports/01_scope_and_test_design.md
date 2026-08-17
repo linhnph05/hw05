@@ -32,8 +32,8 @@ This keeps the database close to its original state.
 I asked a second AI for a first plan. It suggested one endpoint per scenario:
 `GET /api/orders/{id}`, `POST /api/register`, and `POST /api/apply-coupon`.
 That was a useful start, but it missed the assignment-specific requirement from
-my instructor to select three endpoints for each scenario. I expanded each
-workflow to three endpoints above.
+my chosen scope of three endpoints for each scenario. The HW05 requirement is
+three endpoint groups; I expanded each workflow to three endpoints above.
 
 The AI also suggested a five-minute stress run at 50 users. I reduced the first
 real run to 30 users and a shorter ramp because this is a 16 GB student laptop

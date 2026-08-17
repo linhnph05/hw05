@@ -32,11 +32,11 @@ is public and this should be reported as an observation.
 
 ### My review and correction
 
-The advice was a useful starting point, but it missed my instructor's special
-requirement to choose **three endpoints for every scenario**. I changed the
-scope to three-endpoint workflows, added three separate CSV files, and used
-real smoke tests before the measured runs. I also used 30, not 50, stress users
-for the first real write-heavy test.
+The advice was a useful starting point. Its one-endpoint scenarios would meet
+the HW05 endpoint-group requirement, but I chose three-endpoint workflows for
+this submission. I added three separate CSV files and used real smoke tests
+before the measured runs. I also used 30, not 50, stress users for the first
+real write-heavy test.
 
 ## Interaction 2 — Raw-result analysis consultation
 

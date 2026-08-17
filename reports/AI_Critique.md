@@ -4,10 +4,9 @@ Student ID: 23127081
 Full Name: Nguyễn Phan Hùng Linh
 
 The AI was helpful for making a first testing plan, but it was not correct by
-default. At first it suggested only one endpoint for each scenario. My
-assignment required three endpoints for each scenario, so I had to read the
-requirement again and expand the workflows. This happened because the prompt
-asked for endpoint ideas but did not strongly repeat the special group rule.
+default. At first it suggested only one endpoint for each scenario. That meets
+HW05, which asks for three endpoint groups, but I chose to expand each workflow
+to three endpoints. This was a scope choice, not an assignment requirement.
 The AI also suggested a high stress setting before it knew my laptop or the
 SQLite design. I changed this to a smaller, measured first run and used a smoke
 test before the real test.
