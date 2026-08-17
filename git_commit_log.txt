@@ -1,10 +1,83 @@
-7580e3f Add final reports audit and performance skill
-aff9eea Record endurance threshold run
-ccde9f8 Record transactional spike test results
-6f63551 Record auth-heavy stress test results
-d21e5c2 Record read-heavy load test results
-07a2e19 Add transactional spike test plan
-2781605 Add auth-heavy stress test plan
-805e82e Add read-heavy load test plan
-b8a1a86 Define HW05 scope and test data
-2b48400 first commit
+commit 033285d9151ceb7c4ec87e61b05f6c269913002a
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Mon Aug 17 15:15:54 2026 +0700
+
+    Update student name in HW05 deliverables
+
+commit d419eadb4e4762eb93f3aae8079ad24a34a5b2e4
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 14:43:34 2026 +0700
+
+    Add Chrome JMeter dashboard evidence
+
+commit 90f0514dc292cf43b32d40bad51fe35129a77cd3
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 14:16:24 2026 +0700
+
+    Package HW05 performance submission
+
+commit 504c6091088a2d608c087bf88153a60df570dfea
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 14:16:03 2026 +0700
+
+    Add required git commit log
+
+commit 7580e3f31322b107a9bf0690452f09ef6ad70f98
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 14:14:54 2026 +0700
+
+    Add final reports audit and performance skill
+
+commit aff9eea6364c268820a8527f94e41a1a05d542ad
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 14:02:51 2026 +0700
+
+    Record endurance threshold run
+
+commit ccde9f8b69369e4d2a94788b1025d0c927bdcf48
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:51:08 2026 +0700
+
+    Record transactional spike test results
+
+commit 6f63551433db235bc3eb7ddb3571771d99e640f5
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:45:47 2026 +0700
+
+    Record auth-heavy stress test results
+
+commit d21e5c24ea9871cdd0eea2b774187a1154edd286
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:41:38 2026 +0700
+
+    Record read-heavy load test results
+
+commit 07a2e19a4103f4aaf9164798de1a50b4b4de1e9b
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:26:37 2026 +0700
+
+    Add transactional spike test plan
+
+commit 27816052b5fb1dd03fd11455efea8df7302d3fc5
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:22:27 2026 +0700
+
+    Add auth-heavy stress test plan
+
+commit 805e82e51647b76a28cf5f3571a3238a193ec8cf
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:20:45 2026 +0700
+
+    Add read-heavy load test plan
+
+commit b8a1a86ebd8a622756deeb1228d44e3b8be66608
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sun Aug 16 13:16:20 2026 +0700
+
+    Define HW05 scope and test data
+
+commit 2b484002de83b3c757103e7912285f94f21bc6fe
+Author: linhnph05 <linhnph05@gmail.com>
+Date:   Sat Aug 15 23:06:22 2026 +0700
+
+    first commit
