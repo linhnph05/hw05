@@ -41,6 +41,12 @@ The report follows the same order as my work:
 | Operating system | macOS 15.7.3 |
 | AI assistant | Codex / GPT-5.6 |
 
+The following `screenfetch` screenshot records the test computer and hostname.
+It shows the Apple M1 CPU and GPU, 16 GB RAM, macOS, and the display
+resolution.
+
+![Hardware evidence from screenfetch](../images/hardware.png)
+
 I used JMeter CLI mode because the official JMeter Getting Started guide says
 that load testing must run without the GUI for optimal results. The guide is at
 <https://jmeter.apache.org/usermanual/get-started.html#non_gui>. This also
@@ -176,6 +182,12 @@ short traffic increase.
 Stress used the most average CPU because registration and password reset write
 to SQLite. No measured run crashed, and all runs had a 0.00% error rate. I did
 not find a performance issue from these runs.
+
+The following Load-run screenshot shows `htop` and the JMeter CLI output in
+the same frame. `htop` is filtered to the backend process, while JMeter shows
+active users and 0.00% errors during the captured period.
+
+![Backend htop and JMeter CLI evidence](../images/htop.png)
 
 ### 7.3 HTML dashboard evidence
 
